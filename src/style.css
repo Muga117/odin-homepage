@@ -1,4 +1,205 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('./assets/fonts/PlayfairDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('./assets/fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto';
 }
+
+h1, p {
+  font-weight: 100;
+}
+
+h1,
+.card .img-container,
+.card .text-container p,
+.img-caption{
+  font-family: 'Playfair Display';
+}
+
+header{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 250px;
+}
+
+header .img-container{
+  position: relative;
+}
+
+header .img-container img {
+  max-width: 600px;
+  height: auto;
+  -webkit-box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26); 
+  box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26);
+}
+
+.img-caption{
+  color: white;
+  font-size: 100px;
+  padding-left: 30px;
+  position: absolute;
+  bottom: 10px;
+}
+
+header .about-me-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header .about-me-container h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+header .about-me-container p {
+  color: #565656;
+  font-size: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.6;
+}
+header .about-me-container .btn-container{
+  align-self: center;
+  display: flex;
+  gap: 50px;
+}
+
+header .about-me-container .btn-container img {
+  width: 70px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 30px;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+
+}
+
+.card {
+  max-width: 500px;
+  -webkit-box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26); 
+  box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26);
+}
+
+.card .text-container,
+.card .description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card .img-container {
+  background-color: #0891B2;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+.card .text-container {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .text-container .btn-container {
+  width: 100px;
+  display: flex;
+  gap: 20px;
+}
+
+.card .text-container .btn-container img {
+  width: 40px;
+}
+
+.card .description{
+  color: #565656;
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: #0891B2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  gap: 20px;
+}
+
+footer > .text-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+footer > .btn-container {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+footer .btn-container img {
+  width: 70px;
+}
+
+
+footer h1 {
+  text-align: center;
+}
+
+
+
+
+
