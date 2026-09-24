@@ -1,57 +1,62 @@
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('./assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
-        url('./assets/fonts/PlayfairDisplay-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Playfair Display";
+  src:
+    url("./assets/fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
+    url("./assets/fonts/PlayfairDisplay-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('./assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('./assets/fonts/PlayfairDisplay-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Playfair Display";
+  src:
+    url("./assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto-Italic.woff2') format('woff2'),
-        url('./assets/fonts/Roboto-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src:
+    url("./assets/fonts/Roboto-Italic.woff2") format("woff2"),
+    url("./assets/fonts/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto-Regular.woff2') format('woff2'),
-        url('./assets/fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src:
+    url("./assets/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
-h1, p {
+h1,
+p {
   font-weight: 100;
 }
 
 h1,
 .card .img-container,
 .card .text-container p,
-.img-caption{
-  font-family: 'Playfair Display';
+.img-caption {
+  font-family: "Playfair Display";
 }
 
-header{
+header {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -59,18 +64,18 @@ header{
   margin-bottom: 250px;
 }
 
-header .img-container{
+header .img-container {
   position: relative;
 }
 
 header .img-container img {
   max-width: 600px;
   height: auto;
-  -webkit-box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26); 
-  box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26);
+  -webkit-box-shadow: 3px 2px 7px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 3px 2px 7px 2px rgba(0, 0, 0, 0.26);
 }
 
-.img-caption{
+.img-caption {
   color: white;
   font-size: 100px;
   padding-left: 30px;
@@ -96,7 +101,7 @@ header .about-me-container p {
   padding-right: 30px;
   line-height: 1.6;
 }
-header .about-me-container .btn-container{
+header .about-me-container .btn-container {
   align-self: center;
   display: flex;
   gap: 50px;
@@ -106,11 +111,14 @@ header .about-me-container .btn-container img {
   width: 70px;
 }
 
+main {
+  margin-bottom: 250px;
+}
+
 main h1 {
   text-align: center;
   font-size: 80px;
   margin-bottom: 30px;
-  
 }
 
 .card-container {
@@ -118,13 +126,12 @@ main h1 {
   flex-direction: column;
   align-items: center;
   gap: 100px;
-
 }
 
 .card {
   max-width: 500px;
-  -webkit-box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26); 
-  box-shadow: 3px 2px 7px 2px rgba(0,0,0,0.26);
+  -webkit-box-shadow: 3px 2px 7px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 3px 2px 7px 2px rgba(0, 0, 0, 0.26);
 }
 
 .card .text-container,
@@ -134,7 +141,7 @@ main h1 {
 }
 
 .card .img-container {
-  background-color: #0891B2;
+  background-color: #0891b2;
   color: white;
   text-align: center;
   font-size: 80px;
@@ -158,7 +165,7 @@ main h1 {
   width: 40px;
 }
 
-.card .description{
+.card .description {
   color: #565656;
   font-size: 25px;
   margin-bottom: 100px;
@@ -166,7 +173,7 @@ main h1 {
 
 footer {
   padding-top: 20px;
-  background-color: #0891B2;
+  background-color: #0891b2;
   color: white;
   display: flex;
   flex-direction: column;
@@ -194,12 +201,88 @@ footer .btn-container img {
   width: 70px;
 }
 
-
 footer h1 {
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+  }
 
+  header .about-me-container {
+    -webkit-box-shadow: 3px 2px 7px 2px rgba(0, 0, 0, 0.26);
+    box-shadow: 3px 2px 7px 2px rgba(0, 0, 0, 0.26);
+    padding: 50px;
+  }
 
+  header .about-me-container .btn-container {
+    align-self: flex-end;
+  }
 
+  .card-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
 
+@media (min-width: 1920px) {
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  header .about-me-container h1 {
+    font-size: 40px;
+  }
+
+  header .img-container img {
+    max-width: 400px;
+  }
+  .img-caption {
+    font-size: 70px;
+  }
+
+  header .about-me-container p {
+    font-size: 20px;
+  }
+  header .about-me-container .btn-container img {
+    width: 50px;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  .card {
+    max-width: 500px;
+  }
+  .card .img-container {
+    font-size: 80px;
+  }
+  .card .text-container {
+    font-size: 40px;
+  }
+  .card .text-container .btn-container {
+    width: 100px;
+  }
+  .card .text-container .btn-container img {
+    width: 40px;
+  }
+  .card .description {
+    font-size: 25px;
+  }
+  footer {
+    font-size: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer-image {
+    max-width: 500px;
+  }
+
+  footer > .btn-container {
+    align-self: flex-end;
+  }
+}
